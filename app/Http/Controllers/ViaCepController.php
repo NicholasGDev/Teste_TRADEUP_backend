@@ -11,7 +11,7 @@ class ViaCepController extends Controller
     {
         // Validação de formato do CEP
         if (!preg_match('/^[0-9]{8}$/', $cep)) {
-            return response()->json(['error' => 'CEP inválido'], 400);
+            return response()->json(['error' => 'CEP inválido, por favor tente novamente.'], 400);
         }
 
         // Retorne o resultado da busca do CEP

@@ -47,7 +47,7 @@
     </div>
 
     <!-- Mensagem de erro -->
-    <div v-if="error" style="margin-top: 20px; text-align: center; color: red;">
+    <div v-if="error" style="text-align: center; color: red;">
       <p>{{ error }}</p>
     </div>
   </div>
